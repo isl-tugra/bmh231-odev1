@@ -11,8 +11,7 @@ const sunucu = http.createServer((istek, yanit) => {
 
   if (istek.url === "/") {
     yanit.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-    yanit.end("<h1>Ana Sayfa</h1><p><a href='/hakkimda'>Hakkimda Sayfasina Git</a></p>");
-  } 
+   	yanit.end("<h1>Ana Sayfa - Baslik Dali Tarafindan Degistirildi</h1><p><a href='/hakkimda'>Hakkimda Sayfasina Git</a></p>");
   else if (istek.url === "/hakkimda") {
     yanit.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
     yanit.end("<h1>Hakkimda Sayfasi</h1><p>Merhaba, ben Adem Tuğra İslamoğlu. Bu sayfa hakkimda dalinda gelistirildi.</p>");
